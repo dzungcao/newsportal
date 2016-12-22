@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'no-reply@dzungcao.vn', 'name' => 'Dzung Cao''s Blog'],
+    'from' => ['address' => 'no-reply@dzungcao.vn', 'name' => 'Dzung Cao\'s Blog'],
 
     /*
     |--------------------------------------------------------------------------
