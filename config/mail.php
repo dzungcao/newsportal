@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'no-reply@moitruongthudo.vn', 'name' => 'Cổng thông tin quan trắc môi trường TP Hà Nội'],
+    'from' => ['address' => 'no-reply@dzungcao.vn', 'name' => 'Dzung Cao''s Blog'],
 
     /*
     |--------------------------------------------------------------------------
