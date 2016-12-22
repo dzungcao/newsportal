@@ -166,16 +166,4 @@ class NewsController extends Controller
         $item->save();
         return back();
     }
-
-    /*
-    * Download the pdf version of the specified article
-    */
-    public function getPdf($id){
-        $item = NewsItem::findOrFail($id);
-        if(!$item->published) abort(402);
-        
-        //Generate the pdf version of this article
-        $pdf = \PDF::loadView('news.pdf', compact('item'));
-        return $pdf->download($item->getSlug().'.pdf');
-    }
 }

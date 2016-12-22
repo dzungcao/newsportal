@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('metadata')
-<title>Home | NewsPortal</title>
+<title>Home | {{config('app.site_name')}}</title>
 @stop
 
 @section('content')

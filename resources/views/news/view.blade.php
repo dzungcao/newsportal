@@ -25,16 +25,13 @@
     <span><i class="fa fa-clock-o"></i> {{date('H:i',strtotime($item->created_at))}}</span>
 </div>
 <div class="row">
-    <div class="col-xs-6">
+    <div class="col-xs-12">
         <span class='st_sharethis_large' displayText='ShareThis'></span>
         <span class='st_facebook_large' displayText='Facebook'></span>
         <span class='st_twitter_large' displayText='Tweet'></span>
         <span class='st_linkedin_large' displayText='LinkedIn'></span>
         <span class='st_pinterest_large' displayText='Pinterest'></span>
         <span class='st_email_large' displayText='Email'></span>
-    </div>
-    <div class="col-xs-6">
-        <span class="get-pdf pull-right"><a href="/news/pdf/{{$item->id}}"> <i class="fa fa-file-pdf-o"></i> Get as PDF</a></span>
     </div>
 </div>
 <hr>

@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'site_name' =>env('SITE_NAME','Dzung Cao\' Blog'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

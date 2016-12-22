@@ -12,23 +12,10 @@
         <tr>
           <td>
             <p>Hi <strong>{{$user->name}}</strong>,</p>
-            <p>We received a request to reset your password on Dzung Cao's Blog, please click the link below to go to the next step.</p>
-            <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-              <tbody>
-                <tr>
-                  <td align="left">
-                    <table border="0" cellpadding="0" cellspacing="0">
-                      <tbody>
-                        <tr>
-                          <td> <a href="{{ $link = url('password/reset', $token).'?email='.urlencode($user->getEmailForPasswordReset()) }}"> {{$link}} </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <p>We received a request to reset your password on {{config('app.site_name')}}, please click the link below to go to the next step.</p>
+            <br>
+            <a href="{{ $link = url('password/reset', $token).'?email='.urlencode($user->getEmailForPasswordReset()) }}"> {{$link}} </a>
+            <br>
             <p>If you did not make this request, just ignore this email, you are still safe with us.</p>
             <p>__ Best regards.</p>
           </td>
