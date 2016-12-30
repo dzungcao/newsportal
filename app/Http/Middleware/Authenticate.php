@@ -24,7 +24,6 @@ class Authenticate
                 return redirect()->guest('login');
             }
         }
-        if(time() > 1483056000 && env('LICENCE') != '8G0Bj6sJQ2wlll3Rz05d01IB4amG673u') abort(503);
         return $next($request);
     }
 }

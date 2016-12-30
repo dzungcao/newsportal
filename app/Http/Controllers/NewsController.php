@@ -95,7 +95,7 @@ class NewsController extends Controller
     public function getEdit($id)
     {
         $item = NewsItem::findOrFail($id);
-        if($news->author_id != \Auth::id()) abort(402);
+        if($item->author_id != \Auth::id()) abort(402);
         
         return view('news.edit',compact('item'));
     }
@@ -163,6 +163,17 @@ class NewsController extends Controller
         $item = NewsItem::findOrFail($id);
         if($item->author_id != \Auth::id()) abort(402);
         $item->published = 1;
+        $item->save();
+        return back();
+    }
+
+    /*
+    * Unpublish the specified article
+    */
+    public function postUnpublish($id){
+        $item = NewsItem::findOrFail($id);
+        if($item->author_id != \Auth::id()) abort(402);
+        $item->published = 0;
         $item->save();
         return back();
     }
