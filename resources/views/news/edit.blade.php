@@ -73,5 +73,14 @@
 @section('extrascripts')
 
 <script src="https://cdn.ckeditor.com/4.6.1/standard-all/ckeditor.js"></script>
-<script src="/js/ckconfig.js"></script>
+<script>
+    var config = {
+        extraPlugins: 'codesnippet',
+        codeSnippet_theme: 'monokai_sublime',
+        height: 356
+    };
+
+    CKEDITOR.replace( 'news_content', config );
+
+</script>
 @stop

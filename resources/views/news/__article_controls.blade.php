@@ -40,6 +40,13 @@
 						{{csrf_field()}}
 						<button class="btn btn-warning"><i class="fa fa-trash"></i> Remove</button>
 			</form>
+			<form 	method="POST" 
+					style="display: inline-block;" 
+					action="/news/unpublish/{{$item->id}}"
+					>
+						{{csrf_field()}}
+						<button class="btn btn-warning"><i class="fa fa-trash"></i> Unpublish</button>
+			</form>
 		</div>
 		@endif
 		<hr>

@@ -16,6 +16,7 @@
             <br>
             <a href="{{$link}}"> {{$link}} </a>
             <br>
+            <br>
             <p>__ Best regards.</p>
           </td>
         </tr>
