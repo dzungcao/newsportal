@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand">
-                    <strong>NEWS</strong>PORTAL
+                    <strong>DZUNG'S WEBLOG</strong>
                 </a>
             </div>
             <!-- end navbar-header -->

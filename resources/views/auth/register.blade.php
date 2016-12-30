@@ -1,7 +1,7 @@
 @extends('layouts.public',['fluid_container'=>true])
 
 @section('metadata')
-<title>Register | Newsportal</title>
+<title>Register | DZUNG'S WEBLOG</title>
 @stop
 
 @section('content')
@@ -10,7 +10,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-            <h4>Welcome to NewsPortal</h4>
+            <h4>Welcome to DZUNG'S WEBLOG</h4>
             </div>
             <div class="panel-body">
                 <p>Please fill up your information below to signup.</p>
