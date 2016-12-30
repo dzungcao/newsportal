@@ -3,6 +3,10 @@
 @section('metadata')
 <title>Edit news article | {{config('app.site_name')}}</title>
 @stop
+
+@section('extraheads')
+<link href="/js/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" rel="stylesheet">
+@stop
 @section('content')
 
 <div class="row">
@@ -67,6 +71,7 @@
 @endsection
 
 @section('extrascripts')
+
 <script src="https://cdn.ckeditor.com/4.6.1/standard-all/ckeditor.js"></script>
 <script src="/js/ckconfig.js"></script>
 @stop

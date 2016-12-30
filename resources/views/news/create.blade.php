@@ -3,6 +3,11 @@
 @section('metadata')
 <title>Add news | {{config('app.site_name')}}</title>
 @stop
+
+@section('extraheads')
+<link href="/js/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" rel="stylesheet">
+@stop
+
 @section('content')
 
 <div class="row">
