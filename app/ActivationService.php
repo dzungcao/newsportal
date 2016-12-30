@@ -38,7 +38,7 @@ class ActivationService
         $message = sprintf('Activate account <a href="%s">%s</a>', $link, $link);
 
         $this->mailer->send('emails.user_signup',compact('user','link'), function (Message $m) use ($user) {
-            $m->to($user->email)->subject('Account confirmation');
+            $m->to($user->email)->subject('Complete account registration');
         });
 
 
