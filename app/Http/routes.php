@@ -21,6 +21,8 @@ Route::group(['prefix' => 'filemanager','middleware' => 'auth'], function() {
     Route::post('connectors', 'FilemanagerLaravelController@postConnectors');
 	Route::get('show', 'FilemanagerLaravelController@getShow');
 });
-Route::get('connectors', 'FilemanagerLaravelController@getConnectors');
+Route::group(['prefix' => 'filemanager'], function() {    
+	Route::get('connectors', 'FilemanagerLaravelController@getConnectors');
+});
 //Link to a specified article, public to everyone
 Route::get('{id}/{slug}', 'NewsController@getView');
