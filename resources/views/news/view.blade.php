@@ -38,9 +38,10 @@
 <img src="/{{config('app.upload_dir')}}/{{$item->picture}}" class="img-responsive center-block">
 {!!$item->content!!}
 </div>
-<div class="comment">
-    <h3>Comments and discussion</h3>
-    <hr>
+
+<div class="comment" style="margin: 12px 0">
+    
+    <h2>Comments and discussion</h2>
     <div id="disqus_thread"></div>
     <script>
 
