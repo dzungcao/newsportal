@@ -39,6 +39,8 @@
 {!!$item->content!!}
 </div>
 <div class="comment">
+    <h3>Comments and discussion</h3>
+    <hr>
     <div id="disqus_thread"></div>
     <script>
 
