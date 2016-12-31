@@ -156,10 +156,9 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Collective\Bus\BusServiceProvider::class,
-        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
-        Barryvdh\DomPDF\ServiceProvider::class,
-        Roumen\Feed\FeedServiceProvider::class,
+        
+        Intervention\Image\ImageServiceProvider::class,
+        Pqb\FilemanagerLaravel\FilemanagerLaravelServiceProvider::class,
     ],
 
     /*
@@ -206,8 +205,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Input'     => Illuminate\Support\Facades\Input::class,
-        'PDF' => Barryvdh\DomPDF\Facade::class,
-        'Feed' => Roumen\Feed\Feed::class,
+        'Image'     => Intervention\Image\Facades\Image::class,
+        'FilemanagerLaravel'=> Pqb\FilemanagerLaravel\Facades\FilemanagerLaravel::class,
     ],
 
 ];

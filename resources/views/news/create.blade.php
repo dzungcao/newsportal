@@ -71,7 +71,7 @@
     var config = {
         extraPlugins: 'codesnippet',
         codeSnippet_theme: 'monokai_sublime',
-        height: 356
+        height: 356,
     };
 
     CKEDITOR.replace( 'news_content', config );
