@@ -83,6 +83,7 @@
     <!-- end #content -->
 
     <!-- ================== BEGIN BASE JS ================== -->
+    
     <script src="/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
     <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/rrssb.min.js"></script>

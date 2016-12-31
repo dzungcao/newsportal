@@ -15,7 +15,6 @@ Route::get('user/setpass/{token}', 'Auth\AuthController@setPassword')->name('use
 //News publishing routing, all actions will be placed under NewsController
 Route::group(['middleware' => ['auth']], function () {
 	Route::controllers(['news'=> 'NewsController']);
-	Route::controllers(['file'=> 'FileController']);
 });
 Route::group(['prefix' => 'filemanager','middleware' => 'auth'], function() {    
     Route::post('connectors', 'FilemanagerLaravelController@postConnectors');

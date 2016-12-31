@@ -38,6 +38,26 @@
 <img src="/{{config('app.upload_dir')}}/{{$item->picture}}" class="img-responsive center-block">
 {!!$item->content!!}
 </div>
+<div class="comment">
+    <div id="disqus_thread"></div>
+    <script>
+
+    
+    var disqus_config = function () {
+        this.page.url = '{{config("app.url")."/".$item->getSlug()}}';
+        this.page.identifier = 'page-{{$item->id}}';
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//dzungcaocom.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                    
+</div>
 @endsection
 
 
