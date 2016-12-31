@@ -18,9 +18,9 @@ Route::group(['middleware' => ['auth']], function () {
 	Route::controllers(['file'=> 'FileController']);
 });
 Route::group(['prefix' => 'filemanager','middleware' => 'auth'], function() {    
-    Route::get('show', 'FilemanagerLaravelController@getShow');
     Route::get('connectors', 'FilemanagerLaravelController@getConnectors');
     Route::post('connectors', 'FilemanagerLaravelController@postConnectors');
 });
+Route::get('show', 'FilemanagerLaravelController@getShow');
 //Link to a specified article, public to everyone
 Route::get('{id}/{slug}', 'NewsController@getView');
