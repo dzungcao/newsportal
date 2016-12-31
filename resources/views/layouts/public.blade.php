@@ -40,12 +40,10 @@
             <div class="collapse navbar-collapse" id="header-navbar" >
                 <ul class="nav navbar-nav navbar-right">             
                     @if(!\Auth::check())
-                    <li><a href="{{route('rss')}}"><i class="fa fa-rss"></i> RSS</a></li>
                     <li><a href="/login">LOGIN</a></li>
                     <li><a href="/register">REGISTER</a></li>
                     @else
                     <li><a href="/"><i class="fa fa-home"></i> HOME</a></li>
-                    <li><a href="/rss"><i class="fa fa-rss"></i> RSS</a></li>
                     <li><a href="/news"><i class="fa fa-bars"></i> YOUR LIST</a></li>
                     <li><a href="/news/create"><i class="fa fa-edit"></i> WRITE</a></li>
                     <li>
