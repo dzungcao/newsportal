@@ -39,7 +39,7 @@
 {!!$item->content!!}
 </div>
 
-<div class="comment" style="margin: 12px 0">
+<div class="comment" style="margin: 16px 0">
     
     <h2>Comments and discussion</h2>
     <div id="disqus_thread"></div>
